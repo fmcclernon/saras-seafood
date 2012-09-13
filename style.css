@@ -1144,7 +1144,7 @@ form .formee-txt:focus, .formee input[type="text"]:focus, .formee input[type="pa
   top: 0;
   left: 0;
   right: 0;
-  z-index: 7000;
+  //z-index: 7000;
   overflow: visible;
 }
 .topbar a {
