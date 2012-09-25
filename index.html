@@ -14,7 +14,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc
 </script>
 <!-- END PRIVY WIDGET CODE -->
 <div class="main-container">
-<div class="topbar">
+<!-- <div class="topbar">
     <div class="fill">
         <div class="container">
             <a class="brand" href="#"><img src="images/WEB/logo_bar.png" width="130px" height="29px" /></a>
@@ -28,11 +28,11 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc
             
         </div>
     </div>
-</div>
+</div> -->
 
         <div id="container">
             <div id="left_box">
-                    <div onCLick="rotate_view(0)"><img src="images/WEB/sarahs_logo.png" id="logo" /></div>git remote add --track master origin git@github.com:caius/foo.git
+                    <div onCLick="rotate_view(0)"><img src="images/WEB/sarahs_logo.png" id="logo" /></div>
                     <ul id="nav">
                         <li><div class="menu_items" onCLick="rotate_view(0)">Home</div></li>
                         <li><div class="menu_items" onCLick="rotate_view(1)">Menu</div></li>
@@ -42,7 +42,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc
                         <li><div class="menu_items" onCLick="rotate_view(5)">Reviews</div></li>
                     </ul>
                         <div class="nav_special">
-                            <div class="nav_special_heading">Specials</div>
+                            <div class="nav_special_heading">Follow Us Online</div>
                         <!-- 
                         <?php query_posts('category_name=specials'); ?>
 
@@ -57,53 +57,27 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc
                             $special_2 = get_string_between($special_content, "Special 2:", "Price 2:");
                             $price_2 = get_string_between($special_content, "Price 2:", ".");
                         ?> -->
-                        
-                                <table id="content_table">
-                                        <tr>
-                                                <td valign="top">Fish</td>
-                                                <td valign="top">$20</td>
-                                            </tr>
-                                            <tr>
-                                                <td valign="top">Soup</td>
-                                                <td valign="top">$5</td>
-                            </tr>
-                                        </table>
-
-                        <!--<?php endwhile;?>-->
+                        <div class="social-container">
+                                    <a class="social-links" href="http://www.facebook.com/pages/Sarahs-Seafood/266809080096270"><div id="facebook-social"></div>Facebook</a>
+                                    <a class="social-links" href="https://twitter.com/Sarahsseafood"><div id="twitter-social"></div>Twitter</a>
+                                    </div>
 
                             </div>
-                            <div class="nav_special">
+                            <<!-- div class="nav_special">
                         <p class="nav_special_heading">Hours</p>
 
-                        <!--<?php query_posts('category_name=hours'); ?>
-
-                        <?php while (have_posts()) : the_post(); ?>
-                        
-                        <?php
-                            ob_start();
-                            the_content();
-                            $hours_content = ob_get_clean();
-                            $line_1 = get_string_between($hours_content, "Line 1:", ".");
-                            $line_2 = get_string_between($hours_content, "Line 2:", ".");
-                            $line_3 = get_string_between($hours_content, "Line 3:", ".");
-                        ?>
-
-                                <p class="nav_special_content"><?php echo $line_1; ?></p>
-                                <p class="nav_special_content"><?php echo $line_2; ?></p>
-                                <p class="nav_special_content"><?php echo $line_3; ?></p>
-
-                        <?php endwhile;?>-->
+                    
                         <p class="nav_special_content">Monday-Thursday: 11am - 10pm</p>
                         <p class="nav_special_content">Friday-Sunday: 11am - 12:30am</p>
                         
-                    </div>
+                    </div> -->
                 </div>
             </div>
                 <div id="right_box">
                         <div id="home">
                             <div class="window">
                                     <div class="image_reel">
-                                        <a href="#"><img src="images/fancyassfish.jpg" height="539" width="847" alt="" /></a>
+                                        <!-- <a href="#"><img src="images/fancyassfish.jpg" height="539" width="847" alt="" /></a> -->
                                         <a href="#"><img src="images/reel_2.jpg" height="539" width="847" alt="" /></a>
                                     </div>
                                     <div class="paging">
@@ -124,23 +98,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc
                                         <td id="desserts_text"><a href="#_" onClick="desserts_reveal()">Desserts</a>
                                     </table>
                             </div>
-                <!--<?php 
-                    $menu_array = array('appetizers-soups-salads', 'entrees', 'pastas', 'pizzas', 'burgers', 'desserts');
-                    foreach ($menu_array as $i => $value) {
-                        $category_grab = $menu_array[$i];
-                ?>
-                        <div id=<?php echo $category_grab; ?>>
-                            <?php query_posts('category_name=' . $category_grab); ?>
-
-                            <?php while (have_posts()) : the_post(); ?>
-
-                            <?php include('menu_item.php'); ?>
-                        
-                            <?php endwhile; ?>
-                        </div>
-                <?php
-                    } 
-                ?>-->
+                
                     
                             </div>
                         <div id="calendar">
@@ -439,62 +397,62 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc
                             $("#burgers_text").css("border-bottom", "none");
                             $("#desserts_text").css("border-bottom", "1px rgba(255,255,255,.5) solid"); 
             }
-             $(document).ready(function() {
-                        //Show the paging and activate its first link
-                        $(".paging").show();
-                        $(".paging a:first").addClass("active");
+             // $(document).ready(function() {
+             //            //Show the paging and activate its first link
+             //            $(".paging").show();
+             //            $(".paging a:first").addClass("active");
         
-                        var imageWidth = $(".window").width();
-                        var imageSum = $(".image_reel img").size();
-                        var imageReelWidth = imageWidth * imageSum;
+             //            var imageWidth = $(".window").width();
+             //            var imageSum = $(".image_reel img").size();
+             //            var imageReelWidth = imageWidth * imageSum;
         
-                        //Adjust the image reel to its new size
-                        $(".image_reel").css({'width' : imageReelWidth});
+             //            //Adjust the image reel to its new size
+             //            $(".image_reel").css({'width' : imageReelWidth});
                             
-                        //Paging  and Slider Function
-                        rotate = function(){
-                            var triggerID = $active.attr("rel") - 1; //Get number of times to slide
-                            var image_reelPosition = triggerID * imageWidth; //Determines the distance the image reel needs to slide
+             //            //Paging  and Slider Function
+             //            rotate = function(){
+             //                var triggerID = $active.attr("rel") - 1; //Get number of times to slide
+             //                var image_reelPosition = triggerID * imageWidth; //Determines the distance the image reel needs to slide
         
-                            $(".paging a").removeClass('active'); //Remove all active class
-                            $active.addClass('active'); //Add active class (the $active is declared in the rotateSwitch function)
+             //                $(".paging a").removeClass('active'); //Remove all active class
+             //                $active.addClass('active'); //Add active class (the $active is declared in the rotateSwitch function)
                         
-                            //Slider Animation
-                            $(".image_reel").animate({
-                                left: -image_reelPosition
-                            }, 1000 );
+             //                //Slider Animation
+             //                $(".image_reel").animate({
+             //                    left: -image_reelPosition
+             //                }, 1000 );
         
-                        }; 
+             //            }; 
         
-                        //Rotation  and Timing Event
-                        rotateSwitch = function(){
-                            play = setInterval(function(){ //Set timer - this will repeat itself every 7 seconds
-                                $active = $('.paging a.active').next(); //Move to the next paging
-                                if ( $active.length === 0) { //If paging reaches the end...
-                                    $active = $('.paging a:first'); //go back to first
-                                }
-                                rotate(); //Trigger the paging and slider function
-                            }, 5000); //Timer speed in milliseconds (7 seconds)
-                        };
+             //            //Rotation  and Timing Event
+             //            rotateSwitch = function(){
+             //                play = setInterval(function(){ //Set timer - this will repeat itself every 7 seconds
+             //                    $active = $('.paging a.active').next(); //Move to the next paging
+             //                    if ( $active.length === 0) { //If paging reaches the end...
+             //                        $active = $('.paging a:first'); //go back to first
+             //                    }
+             //                    rotate(); //Trigger the paging and slider function
+             //                }, 5000); //Timer speed in milliseconds (7 seconds)
+             //            };
         
-                        rotateSwitch(); //Run function on launch
-                        //On Hover
-                        $(".image_reel a").hover(function() {
-                                    clearInterval(play); //Stop the rotation
-                        }, function() {
-                            rotateSwitch(); //Resume rotation timer
-                        }); 
+             //            rotateSwitch(); //Run function on launch
+             //            //On Hover
+             //            $(".image_reel a").hover(function() {
+             //                        clearInterval(play); //Stop the rotation
+             //            }, function() {
+             //                rotateSwitch(); //Resume rotation timer
+             //            }); 
         
-                        //On Click
-                        $(".paging a").click(function() {
-                            $active = $(this); //Activate the clicked paging
-                            //Reset Timer
-                            clearInterval(play); //Stop the rotation
-                            rotate(); //Trigger rotation immediately
-                            rotateSwitch(); // Resume rotation timer
-                            return false; //Prevent browser jump to link anchor
-                        });
-                    });
+             //            //On Click
+             //            $(".paging a").click(function() {
+             //                $active = $(this); //Activate the clicked paging
+             //                //Reset Timer
+             //                clearInterval(play); //Stop the rotation
+             //                rotate(); //Trigger rotation immediately
+             //                rotateSwitch(); // Resume rotation timer
+             //                return false; //Prevent browser jump to link anchor
+             //            });
+             //        });
 
 sfHover = function() {
     var sfEls = document.getElementById("menu-dropdown").getElementsByTagName("li");
@@ -509,6 +467,11 @@ sfHover = function() {
 }
 if (window.attachEvent) window.attachEvent("onload", sfHover);
                 </script>
+            </div>
+            <div class="footer">
+                <div class="footer-container">
+                    <p>A proud member of the</p><img src="images/WEB/logo_bar.png" width="130px" height="29px" /><p>family.</p>
+                </div>
             </div>
         </body>
         </html>
