@@ -127,6 +127,7 @@ body
 	background-image:url(http://hankhelps.me/previews/christinasfiresidegrille/wp-content/uploads/2012/01/background3.png);	
 	background-repeat: no-repeat;
 	background-position: 0 100px;
+	position: relative;
 }
 #container
 {
@@ -138,7 +139,13 @@ body
 {
 	float: left;
 	margin-top: -30px;
+	width: 400px;
 	
+}
+
+.main-container{
+	position: relative;
+	width: 1400px;
 }
 #logo
 {
@@ -148,11 +155,13 @@ body
 }
 #right_box
 {
-	float: left;	
-	margin: 20px 0 0 20px;
+	//float: left;	
+	margin: 20px 0 0 100px;
     	width: 847px;
     	height: 539px;
 	overflow: hidden;
+	//display: inline;
+	//position: relative;
 	background: rgba(255,255,255,.5);
 }
 #nav
@@ -500,6 +509,8 @@ border-bottom: #e0c5c5 1px solid;
 .image_reel {
 	position: relative;
 	float: left;
+	width: 847px;
+	overflow: hidden;
 }
 
 .image_reel img {
@@ -1501,4 +1512,7 @@ margin-left:80px;
 
 #post-0{
 background: black;
+}
+.window{
+	width: 847px;
 }
