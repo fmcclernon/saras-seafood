@@ -1,4 +1,6 @@
 saras-seafood
 =============
 
-Demo account website
+Privy's demo account website
+
+http://privy.github.io/saras-seafood/
