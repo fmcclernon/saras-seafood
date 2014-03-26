@@ -3,4 +3,4 @@ saras-seafood
 
 Privy's demo account website
 
-http://privy.github.io/saras-seafood/
+http://fmcclernon.github.io/saras-seafood
